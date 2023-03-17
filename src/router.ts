@@ -16,7 +16,7 @@ const routes = [
     component: UserPage,
   },
   {
-    path: '/userpage/:id',
+    path: '/userpage/:userId',
     name: 'userpage-id',
     component: UserPageDetail,
   },
@@ -27,9 +27,9 @@ const routes = [
   },
 ];
 
-const Router = createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes,
 });
 
-export default Router;
+export default router;
