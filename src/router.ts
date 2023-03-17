@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import App from './App.vue';
-import UserPageDetail from './components/UserPageDetail.vue';
+import Home from './pages/Home.vue';
 import UserPage from './pages/UserPage.vue';
+import UserPageDetail from './components/UserPageDetail.vue';
 import TodoList from './pages/TodoList.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: App,
+    name: 'home',
+    component: Home,
   },
   {
     path: '/userpage',
